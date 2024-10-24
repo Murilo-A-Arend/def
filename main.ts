@@ -234,5 +234,5 @@ true
 )
 controller.moveSprite(jogador)
 jogador.setFlag(SpriteFlag.StayInScreen, true)
-inimigo.follow(jogador, 75)
+inimigo.follow(jogador, 70)
 info.startCountup()
