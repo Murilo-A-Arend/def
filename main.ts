@@ -1,4 +1,5 @@
 info.onCountdownEnd(function () {
+    let classe = 0
     info.setScore(game.runtime() * 0.001)
     game.setGameOverMessage(true, "Parabens " + classe)
     game.gameOver(true)
@@ -9,9 +10,6 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
     game.setGameOverMessage(false, "Sobreviveu " + game.runtime() * 0.001 + " segundos")
     game.gameOver(false)
 })
-let classe = ""
-classe = game.askForString("Qual o seu nome?")
-game.splash("Olá, " + classe)
 scene.setBackgroundColor(8)
 let inimigo = sprites.create(img`
     .............ccfff..............
